@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volunsteer.iOS", "iOS\Volun
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Volunsteer.Android", "Android\Volunsteer.Android.csproj", "{C135478F-AF7C-45C6-AF82-401F7473CC74}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{03469430-0588-4D1C-A27D-C8C71AF5251A}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +73,8 @@ Global
 		{D597862C-895A-4729-BC92-8D8E0C3905C6}.Release|iPhone.Build.0 = Release|iPhone
 		{D597862C-895A-4729-BC92-8D8E0C3905C6}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{D597862C-895A-4729-BC92-8D8E0C3905C6}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Android\Volunsteer.Android.csproj
