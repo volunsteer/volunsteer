@@ -3,10 +3,10 @@ using System.Globalization;
 
 namespace Volunsteer
 {
-	public interface ILocalize
-	{
-		CultureInfo GetCurrentCultureInfo ();
+    public interface ILocalize
+    {
+        CultureInfo GetCurrentCultureInfo();
 
-		void SetLocale ();
-	}
+        void SetLocale();
+    }
 }

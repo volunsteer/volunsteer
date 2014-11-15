@@ -8,22 +8,22 @@ using Xamarin.Forms;
 
 namespace Volunsteer
 {
-	public class Localize
-	{
-		static readonly CultureInfo ci;
+    public class Localize
+    {
+        static readonly CultureInfo ci;
 
-		static Localize () 
-		{
-			ci = DependencyService.Get<ILocalize>().GetCurrentCultureInfo ();
-		}
+        static Localize()
+        {
+            ci = DependencyService.Get<ILocalize>().GetCurrentCultureInfo();
+        }
 
-		public static string GetString(string key, string comment)
-		{
-			ResourceManager temp = new ResourceManager ("Volunsteer.AppResources", typeof(Localize).GetTypeInfo ().Assembly);
+        public static string GetString(string key, string comment)
+        {
+            ResourceManager temp = new ResourceManager("Volunsteer.AppResources", typeof(Localize).GetTypeInfo().Assembly);
 
-			string result = temp.GetString (key, ci);
+            string result = temp.GetString(key, ci);
 
-			return result; 
-		}
-	}
+            return result; 
+        }
+    }
 }

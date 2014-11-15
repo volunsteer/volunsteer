@@ -7,21 +7,21 @@ using System.Threading;
 namespace Volunsteer.Android
 {
     public class Localize : Volunsteer.ILocalize
-	{
-		public System.Globalization.CultureInfo GetCurrentCultureInfo()
-		{
+    {
+        public System.Globalization.CultureInfo GetCurrentCultureInfo()
+        {
             var androidLocale = Java.Util.Locale.Default;
-			var netLanguage = androidLocale.ToString().Replace("_", "-");
-			return new System.Globalization.CultureInfo(netLanguage);
-		}
+            var netLanguage = androidLocale.ToString().Replace("_", "-");
+            return new System.Globalization.CultureInfo(netLanguage);
+        }
 
-		public void SetLocale()
-		{
+        public void SetLocale()
+        {
             var androidLocale = Java.Util.Locale.Default;
             var netLocale = androidLocale.ToString().Replace("_", "-"); 
             var ci = new System.Globalization.CultureInfo(netLocale);
-			Thread.CurrentThread.CurrentCulture = ci;
-			Thread.CurrentThread.CurrentUICulture = ci;
-		}
-	}
+            Thread.CurrentThread.CurrentCulture = ci;
+            Thread.CurrentThread.CurrentUICulture = ci;
+        }
+    }
 }
