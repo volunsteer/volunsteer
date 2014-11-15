@@ -35,6 +35,12 @@
     <Compile Include="HelloPage.xaml.cs">
       <DependentUpon>HelloPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TranslateExtension.cs" />
+    <Compile Include="ILocalize.cs" />
+    <Compile Include="Localize.cs" />
+    <Compile Include="AppResources.Designer.cs">
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.2.3.6257\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.2.3.6257\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets')" />
@@ -42,6 +48,11 @@
     <EmbeddedResource Include="HelloPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="AppResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppResources.fr.resx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
