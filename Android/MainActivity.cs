@@ -14,17 +14,17 @@ using Xamarin.Forms;
 
 namespace Volunsteer.Android
 {
-	[Activity (Label = "Volunsteer.Android.Android", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-	public class MainActivity : AndroidActivity
-	{
-		protected override void OnCreate (Bundle bundle)
-		{
-			base.OnCreate (bundle);
+    [Activity(Label = "Volunsteer.Android", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    public class MainActivity : AndroidActivity
+    {
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
 
-			Forms.Init (this, bundle);
+            Forms.Init(this, bundle);
 
-			SetPage (App.GetMainPage ());
-		}
-	}
+            SetPage(App.GetMainPage());
+        }
+    }
 }
 
